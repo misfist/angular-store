@@ -1,0 +1,38 @@
+{
+  "name": "angular-store",
+  "version": "1.0.0",
+  "description": "Store with the angular.js (http://campus.codeschool.com/courses/shaping-up-with-angular-js)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/misfist/angular-store"
+  },
+  "keywords": [
+    "angular.js",
+    "javascript"
+  ],
+  "author": "Pea",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/misfist/angular-store/issues"
+  },
+  "homepage": "https://github.com/misfist/angular-store",
+  "devDependencies": {
+    "angular": "^1.4.4",
+    "gulp": "^3.9.0",
+    "gulp-include": "^2.0.2",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.3.5",
+    "jshint-stylish": "^2.0.1"
+  }
+}
