@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Azurite",
+    "price": 2.95,
+    "description": "This is a description.",
+    "shine": "",
+    "images": [
+      "assets/images/green.png",
+      "assets/images/pink.png"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "This is great!!",
+        "author": "pea@misfist.com"
+      },
+      {
+        "stars": 4,
+        "body": "Pretty nice",
+        "author": "misfist@yahoo.com"
+      }
+    ]
+  },
+  {
+    "name": "Bloodstone",
+    "price": 5.95,
+    "description": "Yeah, so it is a bloodstone. Need I say more?",
+    "shine": "",
+    "images": [
+      "assets/images/orange.png",
+      "assets/images/purple.png"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "",
+        "author": ""
+      },
+      {
+        "stars": 4,
+        "body": "",
+        "author": ""
+      }
+    ]
+  },
+  {
+    "name": "Zircon",
+    "price": 3.95,
+    "description": "Don't you know what a Zircon is?",
+    "shine": "",
+    "images": [
+      "assets/images/silver.png",
+      "assets/images/pink.png"
+    ],
+    "reviews": [
+      {
+        "stars": 5,
+        "body": "",
+        "author": ""
+      },
+      {
+        "stars": 4,
+        "body": "",
+        "author": ""
+      }
+    ]
+  }
+]
