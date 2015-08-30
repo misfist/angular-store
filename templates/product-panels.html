@@ -21,8 +21,8 @@
     <h4>Reviews</h4>
 
     <blockquote ng-repeat="review in product.reviews">
-      <strong>{{review.stars}} Stars</strong>
-      {{review.body}}
+      <strong>{{review.stars}} Stars</strong><br />
+      {{review.body}}<br />
       <cite>{{review.author}} on {{review.createdOn | date: 'shortDate'}}</cite>
     </blockquote>
 
@@ -30,8 +30,8 @@
     <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
       <!-- Live Preview -->
       <blockquote>
-        <strong>{{reviewCtrl.review.stars}}</strong>
-        {{reviewCtrl.review.body}}
+        <strong>{{reviewCtrl.review.stars}}</strong><br />
+        {{reviewCtrl.review.body}}<br />
         <cite>{{reviewCtrl.review.author}}</cite>
       </blockquote>
 
@@ -39,8 +39,8 @@
 
       <select ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" required>
         <option value>Rate the product</option>
-      </select>
-      <textarea ng-model="reviewCtrl.review.body" placeholder="Enter review comments" required></textarea>
+      </select><br />
+      <textarea ng-model="reviewCtrl.review.body" placeholder="Enter review comments" required></textarea><br />
       <input type="email" placeholder="user@email.com" ng-model="reviewCtrl.review.author" required/>
 
       <div>reviewForm is {{reviewForm.$valid}}</div>
