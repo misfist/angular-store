@@ -3,34 +3,23 @@
 
     console.log( 'app.js loaded' );
 
+    /*
+    * Models
+    */
+
+
+    /*
+    * Controllers
+    */
     app.controller( 'StoreController', function() {
         this.products = gems;
     } );
 
-    app.controller( 'TabController', function() {
-        this.tab = 1;
+    // moved into productPanel directive
+    // app.controller( 'TabController'  );
 
-        this.setTab = function(tab) {
-            console.log( this.tab, tab );
-            this.tab = tab;
-        }
-
-        this.isTab = function(tabValue) {
-            return this.tab === tabValue;
-        }
-    } );
-
-    app.controller( 'GalleryController', function() {
-        this.current = 0;
-
-        this.setCurrent = function(imageNum) {
-            if(imageNum !== null) {
-                this.current = imageNum;
-            } else {
-                this.current = 0;
-            }
-        };
-    } );
+    // moved into productGallery directive
+    // app.controller( 'GalleryController' );
 
     app.controller( 'ReviewController', function() {
         this.review = {};
@@ -44,6 +33,9 @@
 
     } );
 
+    /*
+    * Directives
+    */
     app.directive( 'productTitle', function() {
 
         return {
@@ -62,6 +54,50 @@
 
     } );
 
+    app.directive( 'productPanels', function() {
+
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/product-panels.html',
+            // previously TabController
+            controller: function() {
+                this.tab = 1;
+
+                this.setTab = function(tab) {
+                    console.log( this.tab, tab );
+                    this.tab = tab;
+                }
+
+                this.isTab = function(tabValue) {
+                    return this.tab === tabValue;
+                }
+            },
+            controllerAs: 'panel'
+        };
+
+    } );
+
+    app.directive( 'productGallery', function() {
+
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/product-gallery.html',
+            // previously GalleryController
+            controller: function() {
+                this.current = 0;
+
+                this.setCurrent = function(imageNumber) {
+                    this.current == imageNumber || 0;
+                }
+            },
+            controllerAs: 'gallery'
+        };
+
+    } );
+
+    /*
+    * Data
+    */
     var gems = [
         { 
             name: 'Azurite', 

@@ -1,5 +1,4 @@
-/* Core */
-/* Libraries */
+/* Core Libraries */
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6061,7 +6060,24 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Util */
 /* Layout */
-/* Layout */
+.list-group {
+  width: 70%;
+  margin: 0 auto; }
+
+/* Modules */
 /* Components */
-/* Styling */
+.thumbnail img {
+  width: 100px;
+  height: auto; }
+
+form .ng-invalid.ng-dirty {
+  background-color: white;
+  border-color: red; }
+
+form .ng-valid.ng-dirty {
+  background-color: white;
+  border-color: green; }
+
+/* Theme */

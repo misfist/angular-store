@@ -15,7 +15,7 @@
         <!--  Store Header  -->
         <header>
           <h1 class="text-center">Flatlander Crafted Gems</h1>
-          <h2 class="text-center">– an Angular store –</h2>
+          <h2 class="text-center">an Angular store</h2>
         </header>
 
         <div class="list-group-item" ng-repeat="product in store.products">
@@ -24,74 +24,17 @@
             <product-title></product-title>
           </h3>
 
-          <section ng-show="product.images.length" ng-controller="GalleryController as gallery">
-            <img ng-src="{{product.images[gallery.current]}}" />
-            <ul class="list-inline thumbs">
-              <li class="thumbnail" ng-repeat="image in product.images">
-                <img ng-src="{{image}}" />
-              </li>
-            </ul>
-          </section>
-
-          <section class="tab" ng-controller="TabController as panel">
-            <ul class="nav nav-pills">
-              <li ng-class="{active:panel.isTab(1)}">
-                <a href ng-click="panel.setTab(1)">Description</a></li>
-              <li ng-class="{active:panel.isTab(2)}">
-                <a href ng-click="panel.setTab(2)">Specs</a></li>
-              <li ng-class="{active:panel.isTab(3)}">
-                <a href ng-click="panel.setTab(3)">Reviews</a></li>
-            </ul>
-
-            <div ng-show="panel.tab === 1">
-              <product-description></product-description>
-            </div>
-
-            <div ng-show="panel.tab === 2">
-              <h4>Specs</h4>
-              <blockquote>Shine: </blockquote>
-            </div>
-            <div ng-show="panel.tab === 3">
-
-              <h4>Reviews</h4>
-
-              <blockquote ng-repeat="review in product.reviews">
-                <strong>{{review.stars}} Stars</strong>
-                {{review.body}}
-                <cite>{{review.author}} on {{review.createdOn | date: 'shortDate'}}</cite>
-              </blockquote>
-
-              <!-- Turn of default browser validation, if it exists -->
-              <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
-                <!-- Live Preview -->
-                <blockquote>
-                  <strong>{{reviewCtrl.review.stars}}</strong>
-                  {{reviewCtrl.review.body}}
-                  <cite>{{reviewCtrl.review.author}}</cite>
-                </blockquote>
-
-                <h4>Submit a Review</h4>
-
-                <select ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" required>
-                  <option value>Rate the product</option>
-                </select>
-                <textarea ng-model="reviewCtrl.review.body" placeholder="Enter review comments" required></textarea>
-                <input type="email" placeholder="user@email.com" ng-model="reviewCtrl.review.author" required/>
-
-                <div>reviewForm is {{reviewForm.$valid}}</div>
-
-                <input type="submit" value="submit" />
-              </form>
-            </div>
-          </section>
-
+          <product-gallery></product-gallery>
+          
+          <product-panels></product-panels>
+         
         </div>
 
       </div>
 
       <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
       <script type="text/javascript" src="assets/js/app.js"></script>
-      
+
     </body>
 </html>
 
