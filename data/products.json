@@ -27,19 +27,19 @@
     "description": "Yeah, so it is a bloodstone. Need I say more?",
     "shine": "",
     "images": [
-      "assets/images/orange.png",
+      "assets/images/pink.png",
       "assets/images/purple.png"
     ],
     "reviews": [
       {
         "stars": 5,
-        "body": "",
-        "author": ""
+        "body": "It's bloody beautiful!",
+        "author": "eve@vampyres.net"
       },
       {
-        "stars": 4,
-        "body": "",
-        "author": ""
+        "stars": 5,
+        "body": "Purrfect stone!",
+        "author": "catlover@felions.org"
       }
     ]
   },
@@ -50,18 +50,18 @@
     "shine": "",
     "images": [
       "assets/images/silver.png",
-      "assets/images/pink.png"
+      "assets/images/orange.png"
     ],
     "reviews": [
       {
         "stars": 5,
-        "body": "",
-        "author": ""
+        "body": "This is a really nice gem. A+++++++++",
+        "author": "user@email.com"
       },
       {
         "stars": 4,
-        "body": "",
-        "author": ""
+        "body": "Zircon starts with a 'Z', which is good.",
+        "author": "zeeguy@gemster.com"
       }
     ]
   }
