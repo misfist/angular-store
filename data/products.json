@@ -2,8 +2,8 @@
   {
     "name": "Azurite",
     "price": 2.95,
-    "description": "This is a description.",
-    "shine": "",
+    "description": "<p>Azurite is a soft, deep blue copper mineral produced by weathering of copper ore deposits. It is also known as Chessylite after the type locality at Chessy-les-Mines near Lyon, France. The mineral, a carbonate, has been known since ancient times, and was mentioned in Pliny the Elder's Natural History under the Greek name kuanos and the Latin name caeruleum.</p>",
+    "shine": "<p>The optical properties (color, intensity) of minerals such as azurite and malachite are explained in the context of conventional electronic spectroscopy of coordination complexes. Relatively detailed descriptions are provided by ligand field theory.</p>",
     "images": [
       "assets/images/green.png",
       "assets/images/pink.png"
@@ -24,8 +24,8 @@
   {
     "name": "Bloodstone",
     "price": 5.95,
-    "description": "Yeah, so it is a bloodstone. Need I say more?",
-    "shine": "",
+    "description": "<p>Yeah, so it is a bloodstone. Need I say more?</p><p>The mineral heliotrope, also known as bloodstone, is a form of chalcedony (which is a cryptocrystalline mixture of quartz and its monoclinic polymorph moganite). The \"classic\" bloodstone is green chalcedony with red inclusions of iron oxide or red jasper. Sometimes the inclusions are yellow, in which case the mineral is given the name plasma.</p>",
+    "shine": "The red inclusions are supposed to resemble spots of blood; hence the name \"bloodstone\". The name \"heliotrope\" (from Greek ἥλιος helios, Sun, τρέπειν trepein, to turn) derives from various ancient notions about the manner in which the mineral reflects light. These are described, e.g., by Pliny the Elder (Nat. Hist. 37.165).",
     "images": [
       "assets/images/pink.png",
       "assets/images/purple.png"
@@ -46,8 +46,8 @@
   {
     "name": "Zircon",
     "price": 3.95,
-    "description": "Don't you know what a Zircon is?",
-    "shine": "",
+    "description": "<p>Don't you know what a Zircon is?</p><p>Zircon including hyacinth or yellow zircon) is a mineral belonging to the group of nesosilicates. Its chemical name is zirconium silicate and its corresponding chemical formula is ZrSiO4. A common empirical formula showing some of the range of substitution in zircon is (Zr1–y, REEy)(SiO4)1–x(OH)4x–y. Zircon forms in silicate melts with large proportions of high field strength incompatible elements. For example, hafnium is almost always present in quantities ranging from 1 to 4%. The crystal structure of zircon is tetragonal crystal system.</p>",
+    "shine": "<p>The natural color of zircon varies between colorless, yellow-golden, red, brown, blue, and green. Colorless specimens that show gem quality are a popular substitute for diamond and are also known as \"Matura diamond\".</p>",
     "images": [
       "assets/images/silver.png",
       "assets/images/orange.png"

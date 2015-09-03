@@ -1,0 +1,28 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "authors": [
+    "Pea <pea@misfist.com>"
+  ],
+  "description": "Store with the angular.js (http://campus.codeschool.com/courses/shaping-up-with-angular-js)",
+  "main": "app.js",
+  "keywords": [
+    "Angularjs",
+    "gems",
+    "store"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/misfist/angular-store",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5"
+  }
+}

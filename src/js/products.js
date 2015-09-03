@@ -15,8 +15,17 @@
     app.directive( 'productDescription', function() {
 
         return {
-            restrict: 'E',
+            restrict: 'EA',
             templateUrl: 'templates/product-description.html'
+        };
+
+    } );
+
+    app.directive( 'productShine', function() {
+
+        return {
+            restrict: 'EA',
+            templateUrl: 'templates/product-shine.html'
         };
 
     } );
@@ -24,7 +33,7 @@
     app.directive( 'productPanels', function() {
 
         return {
-            restrict: 'E',
+            restrict: 'EA',
             templateUrl: 'templates/product-panels.html',
             // previously TabController
             controller: function() {
