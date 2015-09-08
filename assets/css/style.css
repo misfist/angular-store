@@ -22,15 +22,15 @@ footer {
 
 #main-nav.navbar-inverse {
   background-color: #FFC900;
-  color: #DA005F; }
+  color: #BF0054; }
   #main-nav.navbar-inverse a {
-    color: #DA005F; }
+    color: #BF0054; }
   #main-nav.navbar-inverse .navbar-brand {
-    color: #474144; }
+    color: #038EA1; }
 
 /* Components */
 .thumbnail {
-  background-color: transparent;
+  background-color: #BF0054;
   border-color: #fff; }
   .thumbnail img {
     width: 100px;
@@ -70,9 +70,19 @@ section img.thumb {
   border: 2px solid #fff;
   border-radius: 10px; }
 
+input.btn,
+input[type='submit'] {
+  background-color: #038EA1;
+  color: #fff; }
+  input.btn:hover,
+  input.btn:focus,
+  input[type='submit']:hover,
+  input[type='submit']:focus {
+    color: #DA005F; }
+
 /* Theme */
 body {
-  background-color: #DA005F; }
+  background-color: #BF0054; }
 
 body {
   color: #fff; }

@@ -1,0 +1,9 @@
+input.btn,
+input[type='submit'] {
+    background-color: $accent;
+    color: $white;
+    &:hover,
+    &:focus {
+        color: $primary;
+    }
+}

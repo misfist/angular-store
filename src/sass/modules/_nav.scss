@@ -2,13 +2,13 @@
 
     &.navbar-inverse {
         background-color: $secondary;
-        color: $primary;
+        color: $primary-medium;
 
         a {
-            color: $primary;
+            color: $primary-medium;
         }
         .navbar-brand {
-            color: $primary-dark;
+            color: $accent;
         }
     }
 }
