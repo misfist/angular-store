@@ -6,7 +6,8 @@
   margin: 0 auto; }
 
 .main-section {
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-bottom: 60px; }
 
 /* Modules */
 footer {
