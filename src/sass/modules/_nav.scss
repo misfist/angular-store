@@ -1,0 +1,14 @@
+#main-nav {
+
+    &.navbar-inverse {
+        background-color: $secondary;
+        color: $primary;
+
+        a {
+            color: $primary;
+        }
+        .navbar-brand {
+            color: $primary-dark;
+        }
+    }
+}

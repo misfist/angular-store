@@ -36,15 +36,15 @@
 
       <h4>Submit a Review</h4>
 
-      <select ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" required>
+      <select ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" class="form-control" required>
         <option value>Rate the product</option>
       </select><br />
-      <textarea ng-model="reviewCtrl.review.body" placeholder="Enter review comments" required></textarea><br />
-      <input type="email" placeholder="user@email.com" ng-model="reviewCtrl.review.author" required/>
+      <textarea ng-model="reviewCtrl.review.body" placeholder="Enter review comments" class="form-control" required></textarea><br />
+      <input type="email" placeholder="user@email.com" ng-model="reviewCtrl.review.author" class="form-control" required/>
 
       <!-- <div>reviewForm is {{reviewForm.$valid}}</div> -->
 
-      <input type="submit" value="submit" />
+      <input type="submit" class="btn" value="submit" />
     </form>
   </div>
 </section>

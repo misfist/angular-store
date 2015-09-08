@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html ng-app="store">
-<head>
+  <head>
+    <meta charset="UTF-8">
     <title>Angular Store Project</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Angular Store Project">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
-</head>
-    <body ng-controller="StoreController as store">
+    <meta name="description" content="Tic-tac-toe game built with jQuery.">
+    
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500|Codystar' rel='stylesheet' type='text/css'>
 
-      <div class="list-group">
+    <link rel="stylesheet" href="assets/css/style.css">
+  <body ng-controller="StoreController as store">
 
-        <!--  Store Header  -->
-        <header>
-          <h1 class="text-center">Gems Galore</h1>
-          <h2 class="text-center">an Angular store</h2>
-        </header>
+  <body>
+    <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <h1 class="navbar-brand">Gems Galore</h1>
+            </div>
 
-        <div class="list-group-item" ng-repeat="product in store.products">
-          
-          <h3>
-            <product-title></product-title>
-          </h3>
-
-          <product-gallery></product-gallery>
-
-          <product-panels></product-panels>
-         
+            <div class="collapse pull-right navbar-collapse" id="main-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="https://twitter.com/misfist" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/patricialutz" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+                <li><a href="https://github.com/misfist" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>
+                <li><a href="http://www.freecodecamp.com/misfist" target="_blank"><span class="fa fa-fire"></span> freeCodeCamp</a></li>
+              </ul>
+            </div>
         </div>
+    </nav>
+    <section class="main-section" role="main">
+      <div class="container">
 
+        <div class="list-group">
+
+          <!--  Store Header  -->
+          <header class="sparkley">
+            <h1 class="text-center">Gems Galore</h1>
+            <h2 class="text-center subhead">an Angular store</h2>
+          </header>
+
+          <div class="list-group-item" ng-repeat="product in store.products">
+            
+            <h3>
+              <product-title></product-title>
+            </h3>
+
+            <product-gallery></product-gallery>
+
+            <product-panels></product-panels>
+           
+          </div>
+
+        </div>      
       </div>
-
+    </section>
+    <footer id="site-footer" class="navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+         <nav class="footer-nav pull-right">
+          <ul class="list-inline">
+            <li><a href="https://twitter.com/misfist" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/patricialutz" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a></li>
+            <li><a href="https://github.com/misfist" target="_blank"><span class="fa fa-github"></span> GitHub</a></li>
+            <li><a href="http://www.freecodecamp.com/misfist" target="_blank"><span class="fa fa-fire"></span> freeCodeCamp</a></li>
+          </ul>
+        </nav>
+        <div class="copyleft"><span class="fa fa-copyright fa-flip-horizontal"></span> Copyleft &bull; <a href="https://github.com/misfist/angular-store" target="_blank"><i class="fa fa-github"></i> Source</a></div>
+      </div>
+    </footer>
       <script type="text/javascript" src="assets/js/vendor/angular/angular.min.js"></script>
       <script type="text/javascript" src="assets/js/vendor/angular-sanitize/angular-sanitize.min.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script type="text/javascript" src="assets/js/app.js"></script>
       <script type="text/javascript" src="assets/js/products.js"></script>
-
-    </body>
+      <script type="text/javascript" src="assets/js/sparkles.js"></script>
+      </body>
 </html>
-

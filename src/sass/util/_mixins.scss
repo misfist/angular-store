@@ -1,0 +1,52 @@
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media screen and (max-width: 768px)  { @content; } 
+  }
+  @if $point == sm {
+    @media screen and (min-width: 769px) { @content; }
+  }
+  @if $point == md {
+    @media screen and (min-width: 992px) { @content; }
+  }
+  @if $point == tall {
+    @media screen and ( min-height: 600px ) { @content; }
+  }
+  @else if $point == lg {
+    @media screen and (min-width: 1200px) { @content; }
+  }
+}
+
+// Extends
+
+%text-shadow {
+  text-shadow: 2px 2px 1px $black;
+  text-shadow: -2px -2px -1px $primary-light;  
+}
+
+%header {
+  @extend %text-shadow;
+  font-family: $heading;
+  color: $text-color;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%text-background {
+    padding: 10px;
+    background: transparentize($primary-light, .7);
+    border-radius: 10px;
+}
+
+%light-background {
+    color: $primary-dark;
+    h1,
+    h2 {
+      color: $primary-dark;
+    }
+}

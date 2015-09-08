@@ -3,3 +3,9 @@
 section img.thumb {
     max-width: 100%;
 }
+
+.list-group-item {
+    background-color: $primary;
+    border: 2px solid $white;
+    border-radius: 10px;
+}

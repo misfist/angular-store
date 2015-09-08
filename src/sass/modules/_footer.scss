@@ -1,0 +1,15 @@
+footer {
+
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    &.navbar-inverse {
+        background-color: $accent;
+        color: $secondary;
+
+        a {
+            color: $secondary;
+        }
+    }
+}
